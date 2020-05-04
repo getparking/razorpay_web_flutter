@@ -7,7 +7,6 @@ import 'package:import_js_library/import_js_library.dart';
 import 'package:rzpwplugin/web/razorpay.dart';
 
 class RzpPlugin {
-
   static void registerWith(Registrar registrar) {
     final MethodChannel channel = MethodChannel(
       'rzp_plugin',
@@ -18,16 +17,17 @@ class RzpPlugin {
     channel.setMethodCallHandler(instance.handleMethodCall);
   }
 
+  RazorPayWeb razorPay;
   Future<dynamic> handleMethodCall(MethodCall call) async {
     print(call.method);
     switch (call.method) {
-     
       case "init":
-        final Map<dynamic,dynamic> options = call.arguments["options"];
+        final Map<dynamic, dynamic> options = call.arguments["options"]; 
         print(options);
-        
-        var razorPay = RazorPayWeb(options);
-         if(razorPay != null){
+        razorPay = RazorPayWeb(options);
+        break;
+      case "open":
+        if (razorPay != null) {
           razorPay.open();
         }
         break;

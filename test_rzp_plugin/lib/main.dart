@@ -57,7 +57,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     // TODO: implement initState
-    Rzpwplugin.load();
     super.initState();
   }
 
@@ -88,7 +87,16 @@ class _MyHomePageState extends State<MyHomePage> {
 //    }
 //    };
 
-    Map<String, dynamic> options = new Map();
+    Map<dynamic, dynamic> options = new Map();
+
+
+    options['name'] = 'Gaurav Kumar';
+    options['email'] = 'gaurav.kumar@example.com';
+    options['contact'] = '9999999999';
+
+    options['address'] = 'GetParking Corporate Office';
+
+    options['color'] = '#F37254';
 
     options['key'] = 'rzp_test_QBxB6FwyJzWcfc';
     options['amount'] = '1000000';
@@ -96,9 +104,12 @@ class _MyHomePageState extends State<MyHomePage> {
     options['name'] = 'GetParking';
     options['description'] = 'Test Transaction';
     options['order_id'] = 'order_EljNJUMWEf61Dl';
+    options['image'] =
+        'https://avatars0.githubusercontent.com/u/63893401?s=200&v=4';
+  
 
     Rzpwplugin.init(options);
-    //Rzpwplugin.open();
+    Rzpwplugin.open();
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
