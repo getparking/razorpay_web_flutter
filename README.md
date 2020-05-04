@@ -1,6 +1,7 @@
 # rzpwplugin
 
 A RazorPay Web JS wrapper
+ITS WIP SO DON't use at the moment
 
 ## Getting Started
 
