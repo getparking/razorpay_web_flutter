@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:rzpwplugin/rzpwplugin.dart';
-import 'package:rzpwplugin/web/razorpay.dart';
 
 void main() {
   runApp(MyApp());
