@@ -1,6 +1,7 @@
 package io.flutter.plugins;
 
 import io.flutter.plugin.common.PluginRegistry;
+import in.getparking.rzpwplugin.RzpwpluginPlugin;
 
 /**
  * Generated file. Do not edit.
@@ -10,6 +11,7 @@ public final class GeneratedPluginRegistrant {
     if (alreadyRegisteredWith(registry)) {
       return;
     }
+    RzpwpluginPlugin.registerWith(registry.registrarFor("in.getparking.rzpwplugin.RzpwpluginPlugin"));
   }
 
   private static boolean alreadyRegisteredWith(PluginRegistry registry) {

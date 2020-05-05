@@ -1,9 +1,7 @@
 import 'dart:async';
-import 'dart:html';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
-import 'package:import_js_library/import_js_library.dart';
 import 'package:rzpwplugin/web/razorpay.dart';
 
 class RzpPlugin {
@@ -22,7 +20,7 @@ class RzpPlugin {
     print(call.method);
     switch (call.method) {
       case "init":
-        final Map<dynamic, dynamic> options = call.arguments["options"]; 
+        final Map<dynamic, dynamic> options = call.arguments["options"];
         print(options);
         razorPay = RazorPayWeb(options);
         break;
