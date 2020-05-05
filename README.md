@@ -1,7 +1,12 @@
 # rzpwplugin
 
 A RazorPay Web JS wrapper
-ITS WIP SO DON't use at the moment
+Can be used for POC. 
+
+To use this plugin kindly add your SSH key to Github user settings
+follow this link :
+https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account
+
 
 ## Getting Started
 
