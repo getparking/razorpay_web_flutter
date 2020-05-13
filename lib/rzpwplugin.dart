@@ -13,7 +13,7 @@ class Rzpwplugin {
     await _channel.invokeMethod('load');
   }
 
-  static void init(Map<dynamic,dynamic> options) async {
+  static void init(Map<dynamic,dynamic> options,Function f) async {
     await _channel.invokeMethod('init', {
       "options": options,
     });

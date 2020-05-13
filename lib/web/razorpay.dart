@@ -15,6 +15,7 @@ class RazorPayWeb {
             description: options["description"],
             image: options["image"],
             order_id: options["order_id"],
+            handler: allowInterop((var response){ print('Wallah');}),
             prefill: Prefill(
                 name: options["name"],
                 email: options["email"],
@@ -43,7 +44,7 @@ class RazorPayptions {
   external String get prefill;
   external String get notes;
   external String get theme;
-
+  external Function get handler;
   external factory RazorPayptions(
       {String key,
       String amount,
@@ -54,6 +55,7 @@ class RazorPayptions {
       String order_id,
       Prefill prefill,
       Notes notes,
+      Function handler,
       RazorTheme theme});
 }
 

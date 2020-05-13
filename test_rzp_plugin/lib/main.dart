@@ -59,6 +59,10 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
   }
 
+  void testFunction (var result){
+    print(result);
+  }
+
   void _incrementCounter() {
 //    {
 //      "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
@@ -102,12 +106,12 @@ class _MyHomePageState extends State<MyHomePage> {
     options['currency'] = 'INR';
     options['name'] = 'GetParking';
     options['description'] = 'Test Transaction';
-    options['order_id'] = 'order_EljNJUMWEf61Dl';
+   // options['order_id'] = 'order_EljNJUMWEf61Dl';
     options['image'] =
         'https://avatars0.githubusercontent.com/u/63893401?s=200&v=4';
   
 
-    Rzpwplugin.init(options);
+    Rzpwplugin.init(options,testFunction);
     Rzpwplugin.open();
     setState(() {
       // This call to setState tells the Flutter framework that something has
