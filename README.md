@@ -8,6 +8,10 @@ follow this link :
 https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account
 
 
+This plugin is a wrapper around Razorpay checkout.js library mentioned here.
+
+https://razorpay.com/docs/payment-gateway/web-integration/standard/
+
 ## Getting Started
 
 This project is a starting point for a Flutter
